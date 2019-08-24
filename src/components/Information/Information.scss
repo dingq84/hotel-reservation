@@ -1,0 +1,22 @@
+.Infomation__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 11.8px;
+  cursor: pointer;
+}
+
+.Infomation__contact {
+  margin-top: 50px;
+
+  & > span {
+    display: flex;
+    justify-content: flex-start;
+    font-family: NotoSansCJKtc-DemiLight;
+    color: #ffffff;
+    margin-top: 5%;
+
+    & > h5 {
+      font-size: 14px;
+    }
+  }
+}

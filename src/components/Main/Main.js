@@ -1,11 +1,12 @@
 import React from 'react';
 import Home from '../Home';
 
+import './Main.scss';
+
 const Main = () => (
-  <div>
-    hello world
+  <>
     <Home />
-  </div>
+  </>
 );
 
 export default Main;

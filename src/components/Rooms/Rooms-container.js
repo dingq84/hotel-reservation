@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { token, urls } from '../../api/apiUrl';
-import RoomsView from './Rooms-view';
+import HomePage from './Rooms-homepage';
 
 const RoomsContainer = () => {
   const [roomsData, setRoomsData] = useState();
-  const a = useMemo(() => RoomsView({ data: roomsData }), [roomsData]);
+  const [index, setIndex] = useState(0);
   //get all rooms info when first render
   useEffect(() => {
     fetch(urls.allRooms, {
@@ -19,8 +19,14 @@ const RoomsContainer = () => {
       .then(data => setRoomsData(data.items));
   }, []);
 
+  function handleMouseOver(i) {
+    setIndex(i);
+  }
+
   return (
-    <div>123</div>
+    (roomsData) ?
+      <HomePage data={roomsData} handleMouseOver={handleMouseOver} index={index} />
+      : ''
   );
 };
 

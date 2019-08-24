@@ -1,0 +1,42 @@
+.icon {
+  width: 148px;
+  height: 148px;
+  background: rgba(255,255,255,0.30);
+  border: 2px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 138px;
+    position: absolute;
+    top: -15px;
+    right: 100%;
+    background-color: red;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 138px;
+    height: 15px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    background-color: red;
+    z-index: -1;
+  }
+
+  & h1 {
+    font-family: NotoSansCJKtc-Medium;
+    font-size: 31px;
+    color: #FFFFFF;
+    letter-spacing: 3.24px;
+    line-height: 44px;
+    text-align: center;
+  }
+}
