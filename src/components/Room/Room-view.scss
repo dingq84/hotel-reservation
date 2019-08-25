@@ -1,0 +1,21 @@
+.hotelReservation__single {
+  &--background {
+    height: 596px;
+    background-color: #ccc;
+  }
+
+  &--content {
+    display: flex;
+
+    &--intro {
+      flex-basis: 0;
+      flex-grow: 7;
+      display: flex;
+    }
+
+    &--order {
+      flex-basis: 0;
+      flex-grow: 3;
+    }
+  }
+}

@@ -1,40 +1,39 @@
 .icon {
   width: 148px;
   height: 148px;
-  background: rgba(255,255,255,0.30);
-  border: 2px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 15px;
     height: 138px;
     position: absolute;
     top: -15px;
-    right: 100%;
+    left: -17px;
     background-color: red;
-    z-index: -1;
   }
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 138px;
     height: 15px;
     position: absolute;
     top: -15px;
-    left: 0;
+    left: -2px;
     background-color: red;
-    z-index: -1;
   }
 
   & h1 {
     font-family: NotoSansCJKtc-Medium;
     font-size: 31px;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 3.24px;
     line-height: 44px;
     text-align: center;

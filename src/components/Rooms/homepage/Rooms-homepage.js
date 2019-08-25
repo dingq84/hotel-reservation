@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import Information from '../Information/index';
-import Icon from '../Icon/index';
+import Information from '../../Information/index';
+import Icon from '../../Icon/index';
 
 import "./Room-homepage.scss";
 
 const HomePage = (props) => {
   const { data, handleMouseOver, index } = props;
+  console.log(props)
   const roomsList = (
     <ul
       className='hotelReservation__homepage--roomslide'
@@ -24,6 +26,7 @@ const HomePage = (props) => {
       }
     </ul>
   );
+
   return (
     <div
       className='hotelReservation__homepage'
@@ -33,7 +36,9 @@ const HomePage = (props) => {
       }}
     >
       <div className="hotelReservation__homepage--icon">
-        <Icon />
+        <Link to='/roomslist'>
+          <Icon />
+        </Link>
       </div>
       <h1
         className='hotelReservation__homepage--number'

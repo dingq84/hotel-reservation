@@ -11,8 +11,12 @@
     left: 0;
     top: 12%;
     cursor: pointer;
+
+    & > a {
+      text-decoration: none;
+    }
   }
-  
+
   &--number {
     font-family: NotoSansCJKtc-DemiLight;
     font-size: 66px;
@@ -77,5 +81,9 @@
     right: 0;
     bottom: 8.9%;
     width: 315px;
+
+    & > div:first-child {
+      margin-bottom: 50px;
+    }
   }
 }

@@ -10,33 +10,35 @@ import './Information.scss';
 
 const InformationView = () => (
   <>
-    <img
-      className="Infomation__icon"
-      src={fbicon}
-      alt="fb icon" />
-    <img
-      className="Infomation__icon"
-      src={igicon}
-      alt="ig icon"
-    />
-    <div className="Infomation__contact">
+    <div className="Information__media">
+      <img
+        className="Information__icon"
+        src={fbicon}
+        alt="fb icon" />
+      <img
+        className="Information__icon"
+        src={igicon}
+        alt="ig icon"
+      />
+    </div>
+    <div className="Information__contact">
       <span>
         <img
-          className="Infomation__icon"
+          className="Information__icon"
           src={phoneicon}
           alt="phone icon" />
         <h5>02-17264937</h5>
       </span>
       <span>
         <img
-          className="Infomation__icon"
+          className="Information__icon"
           src={mailicon}
           alt="mail icon" />
         <h5>whitespace@whitespace.com.tw</h5>
       </span>
       <span>
         <img
-          className="Infomation__icon"
+          className="Information__icon"
           src={homeicon}
           alt="home icon" />
         <h5>台北市羅斯福路十段30號</h5>
