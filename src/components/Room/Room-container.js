@@ -6,8 +6,8 @@ import RoomView from './Room-view';
 const RoomContainer = ({ id = '' }) => {
   const [data, setData] = useState();
   useEffect(() => {
-    async function getRoomData() {
-      await fetch(`${urls.room}${id}`, {
+    function getRoomData() {
+      fetch(`${urls.room}${id}`, {
         method: 'GET',
         headers: {
           Authorization: token,
@@ -23,7 +23,7 @@ const RoomContainer = ({ id = '' }) => {
     return () => {
       getRoomData();
     }
-  }, []);
+  }, [id]);
   console.log(data)
   return (
     (data) ?

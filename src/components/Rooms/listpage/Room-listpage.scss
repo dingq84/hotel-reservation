@@ -1,11 +1,14 @@
 .hotelReservation__listpage {
   &--background {
     height: 660px;
-    background-color: grey;
+    // background-color: grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 
     &--info {
       margin-top: 40px;

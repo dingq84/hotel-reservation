@@ -11,8 +11,8 @@ const RoomsContainer = () => {
   const [index, setIndex] = useState(0);
   //get all rooms info when first render
   useEffect(() => {
-    async function getRoomsData() {
-      await fetch(urls.allRooms, {
+    function getRoomsData() {
+      fetch(urls.allRooms, {
         method: 'GET',
         headers: {
           Authorization: token,
