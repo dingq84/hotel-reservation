@@ -63,7 +63,7 @@ const RoomsContainer = () => {
                 />
               ))
             }
-          </> : ''
+          </> : <div>loading</div>
       }
     </Router>
   );
