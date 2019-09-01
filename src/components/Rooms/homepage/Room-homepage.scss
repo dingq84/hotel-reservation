@@ -1,0 +1,89 @@
+.hotelReservation__homepage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+
+  &--icon {
+    position: fixed;
+    left: 0;
+    top: 12%;
+    cursor: pointer;
+
+    & > a {
+      text-decoration: none;
+    }
+  }
+
+  &--number {
+    font-family: NotoSansCJKtc-DemiLight;
+    font-size: 66px;
+    color: #ffffff;
+    position: fixed;
+    left: 6%;
+    bottom: 10%;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 85px;
+      height: 18px;
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-100%);
+    }
+  }
+
+  &--roomname {
+    font-family: NotoSansCJKtc-DemiLight;
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 2.51px;
+    position: fixed;
+    left: 6%;
+    bottom: 8.9%;
+  }
+
+  &--roomslide {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 305px;
+    height: 404px;
+    background-color: #fff;
+    font-size: 14px;
+    padding-left: 2.8%;
+    letter-spacing: 1.5px;
+
+    & > li {
+      margin-top: 12%;
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 23px;
+          position: absolute;
+          top: 50%;
+          right: 100%;
+          transform: translate(-50%, -50%);
+          border: 1px solid #000000;
+        }
+      }
+    }
+  }
+
+  &--contactinfo {
+    position: fixed;
+    right: 0;
+    bottom: 8.9%;
+    width: 315px;
+
+    & > div:first-child {
+      margin-bottom: 50px;
+    }
+  }
+}
