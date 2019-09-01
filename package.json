@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://dingq84.github.io/hotel-reservation",
   "dependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.1.1",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",

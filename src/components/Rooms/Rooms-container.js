@@ -35,7 +35,7 @@ const RoomsContainer = () => {
   }
 
   return (
-    <Router>
+    <Router basename="/hotel-reservation/">
       {
         (roomsData) ?
           <>
